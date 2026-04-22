@@ -116,4 +116,18 @@ LLaMA 3.1 8B Instant, GPT-OSS 20B e GPT-OSS Safeguard 20B são os modelos com as
 
 
 
+<img width="979" height="577" alt="image" src="https://github.com/user-attachments/assets/93afb763-ae8f-4df5-a090-f6524a85f1c8" />
+
+
+<img width="380" height="283" alt="image" src="https://github.com/user-attachments/assets/86a01c74-f9bc-4860-ab91-c763e01031d9" />
+
+
+<img width="509" height="387" alt="image" src="https://github.com/user-attachments/assets/674ffcc1-3732-4ffc-a284-ecb603a18336" />
+
+<img width="1184" height="679" alt="image" src="https://github.com/user-attachments/assets/32cd09bf-8bdd-45b2-a7d3-693448d326eb" />
+
+
+
+
+
 
