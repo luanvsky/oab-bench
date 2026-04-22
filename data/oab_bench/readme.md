@@ -90,3 +90,30 @@ Observação: mantenha esses prompts em um arquivo (ex.: `prompts/reusable_promp
 
 ## Créditos e contato
 Repositório: luanvsky/oab-bench  
+---
+
+# Gráfico de barras comparativo mostrando o BERTScore F1-score e a pontuação percentual do LLM-Juiz para cada modelo. Isso ajudará a visualizar a relação entre similaridade textual e avaliação de conteúdo.
+
+O gráfico gerado, intitulado 'BERTScore F1-score vs. Pontuação do LLM-Juiz por Modelo', compara o desempenho de cada modelo usando duas métricas:
+
+F1-score do BERTScore: Representa a similaridade semântica das respostas do modelo com o gabarito oficial, variando de 0 a 1.
+Pontuação Percentual do LLM-Juiz (0-1): É a nota média percentual que o LLM-Juiz atribuiu a cada modelo, também normalizada para uma escala de 0 a 1 para facilitar a comparação visual.
+Este gráfico permite que você veja como a similaridade textual (BERTScore) se alinha com a avaliação de conteúdo (LLM-Juiz) para cada um dos modelos testados. Modelos que têm barras de F1-score e Pontuação do LLM-Juiz de altura similar indicam uma boa concordância entre as duas métricas, enquanto grandes diferenças podem sugerir que o modelo é semanticamente similar, mas não atende aos critérios de avaliação do juiz, ou vice-versa.
+
+<img width="1386" height="790" alt="image" src="https://github.com/user-attachments/assets/ac0c782b-5ef8-4354-a40b-97dde2565387" />
+
+Com base nos cálculos anteriores, os modelos que apresentam a maior discrepância entre o F1-score do BERTScore e a Pontuação Percentual do LLM-Juiz são:
+
+<img width="644" height="279" alt="image" src="https://github.com/user-attachments/assets/723935c7-4487-4ae5-97fd-b6599454f630" />
+
+
+A tabela mostra os modelos com a maior discrepância entre o F1-score do BERTScore e a pontuação percentual do LLM-Juiz, ordenados do maior para o menor desvio:
+
+GPT-OSS 120B e Groq Compound apresentam os maiores desvios. O GPT-OSS 120B, por exemplo, tem um F1-score de 0.620, mas uma pontuação do LLM-Juiz de 100%. Isso sugere que, embora a similaridade semântica com o gabarito (medida pelo BERTScore) não seja a mais alta, o LLM-Juiz o avaliou como perfeito. Isso pode indicar que o GPT-OSS 120B capturou os pontos-chave exigidos pelo LLM-Juiz, mesmo que a formulação da resposta não fosse linguisticamente muito similar ao gabarito.
+Allam 2 7B também mostra uma grande diferença, com um F1-score baixo (0.206) e uma pontuação do LLM-Juiz de 45.7%.
+LLaMA 3.1 8B Instant, GPT-OSS 20B e GPT-OSS Safeguard 20B são os modelos com as menores discrepâncias. Isso significa que a avaliação de similaridade semântica (BERTScore) e a avaliação de conteúdo (LLM-Juiz) para esses modelos são mais alinhadas, sugerindo que respostas semanticamente mais próximas aos gabaritos também tendem a receber pontuações de conteúdo mais altas do LLM-Juiz.
+
+
+
+
+
